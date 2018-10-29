@@ -1,0 +1,300 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 2700 2900 0    50   Input ~ 0
+Blue
+Text HLabel 2700 2500 0    50   Input ~ 0
+Brown
+$Comp
+L Device:L_Core_Iron L?
+U 1 1 5BD777DD
+P 5450 1550
+F 0 "L?" V 5272 1550 50  0000 C CNN
+F 1 "TIM-NTA DFSG1-33-10/a" V 5363 1550 50  0000 C CNN
+F 2 "" H 5450 1550 50  0001 C CNN
+F 3 "~" H 5450 1550 50  0001 C CNN
+	1    5450 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BD779E4
+P 3500 1550
+F 0 "C?" H 3615 1596 50  0000 L CNN
+F 1 "WIMA MP3-X2 0.1uF 250VAC" H 3615 1505 50  0000 L CNN
+F 2 "" H 3538 1400 50  0001 C CNN
+F 3 "~" H 3500 1550 50  0001 C CNN
+	1    3500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BD77A9F
+P 8800 2150
+F 0 "C?" H 8915 2196 50  0000 L CNN
+F 1 "WIMA MP3-X2 0.1uF 250VAC" H 8915 2105 50  0000 L CNN
+F 2 "" H 8838 2000 50  0001 C CNN
+F 3 "~" H 8800 2150 50  0001 C CNN
+	1    8800 2150
+	1    0    0    -1  
+$EndComp
+Text HLabel 2750 1000 0    50   Output ~ 0
+Violet1
+Text HLabel 2700 3050 0    50   Output ~ 0
+Violet2
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5BD77EEB
+P 4700 2700
+F 0 "T?" H 4700 3150 50  0000 C CNN
+F 1 "Gerth BV 304.12 1,8VA" H 4700 3050 50  0000 C CNN
+F 2 "" H 4700 2700 50  0001 C CNN
+F 3 "~" H 4700 2700 50  0001 C CNN
+	1    4700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Transformer_1P_1S T?
+U 1 1 5BD78082
+P 4700 3650
+F 0 "T?" H 4700 4100 50  0000 C CNN
+F 1 "Gerth BV 304.12 1,8VA" H 4700 4000 50  0000 C CNN
+F 2 "" H 4700 3650 50  0001 C CNN
+F 3 "~" H 4700 3650 50  0001 C CNN
+	1    4700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5BD78619
+P 3900 2500
+F 0 "F?" V 3703 2500 50  0000 C CNN
+F 1 "250VAC 150mA" V 3794 2500 50  0000 C CNN
+F 2 "" V 3830 2500 50  0001 C CNN
+F 3 "~" H 3900 2500 50  0001 C CNN
+	1    3900 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5BD7867E
+P 3900 3450
+F 0 "F?" V 3703 3450 50  0000 C CNN
+F 1 "250VAC 150mA" V 3794 3450 50  0000 C CNN
+F 2 "" V 3830 3450 50  0001 C CNN
+F 3 "~" H 3900 3450 50  0001 C CNN
+	1    3900 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3450 2500 3450 3450
+Wire Wire Line
+	3450 3450 3750 3450
+Connection ~ 3450 2500
+Wire Wire Line
+	3450 2500 3750 2500
+Wire Wire Line
+	4050 3450 4300 3450
+Wire Wire Line
+	4050 2500 4300 2500
+Wire Wire Line
+	2700 2900 2850 2900
+Wire Wire Line
+	3300 2900 3300 3850
+Wire Wire Line
+	3300 3850 4300 3850
+Connection ~ 3300 2900
+Wire Wire Line
+	3300 2900 4300 2900
+Wire Wire Line
+	2700 3050 2850 3050
+Wire Wire Line
+	2850 3050 2850 2900
+Connection ~ 2850 2900
+Wire Wire Line
+	2850 2900 3300 2900
+$Comp
+L Relay:DIPxx-1Axx-11x K?
+U 1 1 5BD792DF
+P 7850 5700
+F 0 "K?" H 7420 5746 50  0000 R CNN
+F 1 "Panasonic JW1FSN-DC12V" H 7420 5655 50  0000 R CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 8200 5650 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 7850 5700 50  0001 C CNN
+	1    7850 5700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2500 2850 2500
+Wire Wire Line
+	2850 2500 2850 2100
+Connection ~ 2850 2500
+Wire Wire Line
+	2850 2500 3450 2500
+Text HLabel 10150 5550 2    50   Input ~ 0
+GreyBlack
+Text HLabel 10150 5850 2    50   Input ~ 0
+RedBrown
+$Comp
+L Device:D D?
+U 1 1 5BD79FEE
+P 9800 5700
+F 0 "D?" V 9846 5621 50  0000 R CNN
+F 1 "D" V 9755 5621 50  0000 R CNN
+F 2 "" H 9800 5700 50  0001 C CNN
+F 3 "~" H 9800 5700 50  0001 C CNN
+	1    9800 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9800 5850 10150 5850
+Wire Wire Line
+	10150 5550 9800 5550
+Wire Wire Line
+	9800 5550 9800 5400
+Wire Wire Line
+	9800 5400 8050 5400
+Wire Wire Line
+	8050 6000 9800 6000
+Wire Wire Line
+	9800 6000 9800 5850
+Text HLabel 4250 5300 0    50   Output ~ 0
+WhiteBlack
+Text HLabel 4250 5500 0    50   Output ~ 0
+WhiteRed
+Text HLabel 5350 2500 2    50   Output ~ 0
+BlackOrange1
+Text HLabel 5350 2900 2    50   Output ~ 0
+BlackOrange2
+Connection ~ 9800 5850
+Connection ~ 9800 5550
+$Comp
+L Device:Fuse F?
+U 1 1 5BD7CA55
+P 4400 2000
+F 0 "F?" V 4203 2000 50  0000 C CNN
+F 1 "250VAC 10A" V 4294 2000 50  0000 C CNN
+F 2 "" V 4330 2000 50  0001 C CNN
+F 3 "~" H 4400 2000 50  0001 C CNN
+	1    4400 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3500 1400 3500 1000
+Wire Wire Line
+	2750 1000 3500 1000
+Wire Wire Line
+	3500 2100 3500 1700
+Wire Wire Line
+	2850 2100 3500 2100
+Wire Wire Line
+	4550 5500 4250 5500
+Wire Wire Line
+	4250 5300 4550 5300
+$Comp
+L Triac_Thyristor:BT138-800 Q?
+U 1 1 5BD7F80B
+P 6600 1650
+F 0 "Q?" H 6729 1696 50  0000 L CNN
+F 1 "BT138-800" H 6729 1605 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6800 1575 50  0001 L CIN
+F 3 "http://www.nxp.com/documents/data_sheet/BT138_SER_D_E.pdf" H 6600 1650 50  0001 L CNN
+	1    6600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Bridge_+-AA D?
+U 1 1 5BD8007C
+P 5750 3650
+F 0 "D?" H 6091 3696 50  0000 L CNN
+F 1 "B380-C1500R" H 6091 3605 50  0000 L CNN
+F 2 "" H 5750 3650 50  0001 C CNN
+F 3 "~" H 5750 3650 50  0001 C CNN
+	1    5750 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Isolator:SFH617A-4 U?
+U 1 1 5BD80683
+P 4850 5400
+F 0 "U?" H 4850 5725 50  0000 C CNN
+F 1 "SFH618A" H 4850 5634 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 4650 5200 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 4850 5400 50  0001 L CNN
+	1    4850 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5BD80ADA
+P 6850 3850
+F 0 "C?" H 6942 3896 50  0000 L CNN
+F 1 "220uF" H 6942 3805 50  0000 L CNN
+F 2 "" H 6850 3850 50  0001 C CNN
+F 3 "~" H 6850 3850 50  0001 C CNN
+	1    6850 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 2500 5100 2500
+Wire Wire Line
+	5350 2900 5100 2900
+Wire Wire Line
+	5100 3450 5300 3450
+Wire Wire Line
+	5300 3450 5300 3350
+Wire Wire Line
+	5300 3350 5750 3350
+Wire Wire Line
+	5100 3850 5300 3850
+Wire Wire Line
+	5300 3850 5300 3950
+Wire Wire Line
+	5300 3950 5750 3950
+Wire Wire Line
+	6050 3650 6850 3650
+Wire Wire Line
+	6850 3950 6850 4050
+Wire Wire Line
+	6850 4050 5450 4050
+Wire Wire Line
+	5450 4050 5450 3650
+Wire Wire Line
+	6850 3650 6850 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5BD87DEC
+P 6850 4050
+F 0 "#PWR?" H 6850 3800 50  0001 C CNN
+F 1 "GND" H 6855 3877 50  0000 C CNN
+F 2 "" H 6850 4050 50  0001 C CNN
+F 3 "" H 6850 4050 50  0001 C CNN
+	1    6850 4050
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 4050
+$Comp
+L power:+12V #PWR?
+U 1 1 5BD87E9A
+P 6850 3650
+F 0 "#PWR?" H 6850 3500 50  0001 C CNN
+F 1 "+12V" H 6865 3823 50  0000 C CNN
+F 2 "" H 6850 3650 50  0001 C CNN
+F 3 "" H 6850 3650 50  0001 C CNN
+	1    6850 3650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6850 3650
+$EndSCHEMATC
