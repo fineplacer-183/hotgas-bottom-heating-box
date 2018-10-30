@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -126,42 +126,15 @@ Wire Wire Line
 	5100 2050 4050 2050
 Text Label 4100 2050 0    50   ~ 0
 HeatingPowerRelay
-$Comp
-L Connector:DB9_Male J?
-U 1 1 5BD8BC42
-P 2500 4500
-F 0 "J?" H 2420 3808 50  0000 C CNN
-F 1 "DB9_Male" H 2420 3899 50  0000 C CNN
-F 2 "" H 2500 4500 50  0001 C CNN
-F 3 " ~" H 2500 4500 50  0001 C CNN
-	1    2500 4500
-	-1   0    0    1   
-$EndComp
-NoConn ~ 2800 4100
-Wire Wire Line
-	2800 4300 4050 4300
-Text Label 3650 4300 0    50   ~ 0
-RedViolet
-Wire Wire Line
-	2800 4500 4050 4500
-Text Label 3650 4500 0    50   ~ 0
-RedBlack
-NoConn ~ 2800 4700
-NoConn ~ 2800 4900
-Wire Wire Line
-	2800 4200 4050 4200
-Text Label 3650 4200 0    50   ~ 0
-Yellow
-Wire Wire Line
-	2800 4400 4050 4400
-Text Label 3650 4400 0    50   ~ 0
-Orange
-Wire Wire Line
-	2800 4600 4050 4600
-Text Label 3650 4600 0    50   ~ 0
-Grey
-Wire Wire Line
-	2800 4800 4050 4800
-Text Label 3650 4800 0    50   ~ 0
-Violet
+$Sheet
+S 2000 3800 1050 1000
+U 5BD88E6B
+F0 "Control" 50
+F1 "control.sch" 50
+F2 "DigitalInput1" O R 3050 4000 50 
+F3 "DigitalInput2" O R 3050 4100 50 
+F4 "DigitalInput3" O R 3050 4200 50 
+F5 "AnalogInput" O L 2000 4400 50 
+F6 "AnalogOutput" I R 3050 4600 50 
+$EndSheet
 $EndSCHEMATC
