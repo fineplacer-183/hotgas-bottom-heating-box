@@ -158,9 +158,9 @@ Wire Wire Line
 	7200 4100 8650 4100
 Wire Wire Line
 	8650 4100 8650 3950
-Text HLabel 9300 2750 2    50   Output ~ 0
+Text HLabel 9300 2950 2    50   Input ~ 0
 WhiteBlack
-Text HLabel 9300 2950 2    50   Output ~ 0
+Text HLabel 9300 2750 2    50   Input ~ 0
 WhiteRed
 Text HLabel 4050 5000 2    50   Output ~ 0
 BlackOrange1
