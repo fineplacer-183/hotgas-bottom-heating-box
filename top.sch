@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -136,5 +136,11 @@ F3 "DigitalInput2" O R 3050 4100 50
 F4 "DigitalInput3" O R 3050 4200 50 
 F5 "AnalogInput" O L 2000 4400 50 
 F6 "AnalogOutput" I R 3050 4600 50 
+$EndSheet
+$Sheet
+S 4900 3700 1450 1500
+U 5BD8C4C3
+F0 "Middle PCB" 50
+F1 "middle_pcb.sch" 50
 $EndSheet
 $EndSCHEMATC
